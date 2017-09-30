@@ -64,8 +64,8 @@
     },
     {
       "apiVersion": "2015-08-01",
-      "name": "[variables('webSiteName')]"
-      "type": "Microsoft.Web/sites",
+      "name": "[variables('webSiteName')]",
+      "type": "Microsoft.Web",
       "location": "[resourceGroup().location]",
       "tags": {
         "[concat('hidden-related:', resourceGroup().id, '/providers/Microsoft.Web/serverfarms/', parameters('hostingPlanName'))]": "Resource",
