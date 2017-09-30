@@ -84,7 +84,7 @@
           "type": "sourcecontrols",
           "apiVersion": "2015-08-01",
           "dependsOn": [
-            "[variables('webSiteName')]"
+            "[resourceId('Microsoft.Web/sites', variables('webSiteName'))]"
           ],
           "properties": {
             "RepoUrl": "[parameters('repositoryUrl')]",
